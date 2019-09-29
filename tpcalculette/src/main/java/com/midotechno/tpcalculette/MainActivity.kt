@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
     fun onClickOperation(v:View){
         val element = v as? Button ?: return
 
-        if (encours.equals(false) and  !(saisieText.text.equals("")) ) {
+        if (encours.equals(false) and  !(saisieText.text.equals("") or saisieText.text.equals(".")) ) {
             var result = element.text.toString()
             when (result) {
                 "+" -> operation = Op_enum.addition
