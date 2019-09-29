@@ -1,2 +1,2 @@
-include ':app', ':tpcalculette'
+include ':app', ':tpcalculette', ':exemplecours'
 rootProject.name='MbdsTps'
