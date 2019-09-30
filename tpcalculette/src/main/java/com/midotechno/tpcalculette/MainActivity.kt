@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
                 val op = Operation(operation,num1,num2)
                 saisieText.text = op.result().toString()
                 result = op.result()
-                historiqueText.text = historiqueText.text.toString() +"\n->$num1"+operationSymbole(operation)+"$num2=$result"
+                historiqueText.text = "->$num1"+operationSymbole(operation)+"$num2=$result\n" + historiqueText.text.toString()
 
             }
             btnReset.text="AC"
